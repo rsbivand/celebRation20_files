@@ -118,3 +118,14 @@ summary(res2D)
 ## ---- echo = TRUE, eval=TRUE, mysize=TRUE, size='\\tiny'----------------------------------------
 summary(impacts(res2D, tr=tr, R=2000), short=TRUE, zstats=TRUE)
 
+########################
+library(sf)
+sf_extSoftVersion()
+bp_file <- "b_pump.gpkg"
+b_pump_sf <- st_read(bp_file)
+library(mapview)
+mapview(b_pump_sf)
+
+
+
+
